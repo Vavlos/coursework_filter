@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+05b0be2ca8f4bb9b817285acc5595b9b doc/CMakeFiles/coursework_docs
+28b192ad7feee94b8aa73029be64da51 flash_n_debug/CMakeFiles/flash

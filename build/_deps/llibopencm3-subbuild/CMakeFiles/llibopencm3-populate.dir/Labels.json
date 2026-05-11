@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/shader/coursework_filter/build/_deps/llibopencm3-subbuild/CMakeFiles/llibopencm3-populate"
+		},
+		{
+			"file" : "/home/shader/coursework_filter/build/_deps/llibopencm3-subbuild/CMakeFiles/llibopencm3-populate.rule"
+		},
+		{
+			"file" : "/home/shader/coursework_filter/build/_deps/llibopencm3-subbuild/CMakeFiles/llibopencm3-populate-complete.rule"
+		},
+		{
+			"file" : "/home/shader/coursework_filter/build/_deps/llibopencm3-subbuild/llibopencm3-populate-prefix/src/llibopencm3-populate-stamp/llibopencm3-populate-build.rule"
+		},
+		{
+			"file" : "/home/shader/coursework_filter/build/_deps/llibopencm3-subbuild/llibopencm3-populate-prefix/src/llibopencm3-populate-stamp/llibopencm3-populate-configure.rule"
+		},
+		{
+			"file" : "/home/shader/coursework_filter/build/_deps/llibopencm3-subbuild/llibopencm3-populate-prefix/src/llibopencm3-populate-stamp/llibopencm3-populate-download.rule"
+		},
+		{
+			"file" : "/home/shader/coursework_filter/build/_deps/llibopencm3-subbuild/llibopencm3-populate-prefix/src/llibopencm3-populate-stamp/llibopencm3-populate-install.rule"
+		},
+		{
+			"file" : "/home/shader/coursework_filter/build/_deps/llibopencm3-subbuild/llibopencm3-populate-prefix/src/llibopencm3-populate-stamp/llibopencm3-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/shader/coursework_filter/build/_deps/llibopencm3-subbuild/llibopencm3-populate-prefix/src/llibopencm3-populate-stamp/llibopencm3-populate-patch.rule"
+		},
+		{
+			"file" : "/home/shader/coursework_filter/build/_deps/llibopencm3-subbuild/llibopencm3-populate-prefix/src/llibopencm3-populate-stamp/llibopencm3-populate-test.rule"
+		},
+		{
+			"file" : "/home/shader/coursework_filter/build/_deps/llibopencm3-subbuild/llibopencm3-populate-prefix/src/llibopencm3-populate-stamp/llibopencm3-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"llibopencm3-populate"
+		],
+		"name" : "llibopencm3-populate"
+	}
+}

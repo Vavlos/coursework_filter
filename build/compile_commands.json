@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/shader/coursework_filter/build/src",
+  "command": "/usr/bin/arm-none-eabi-gcc -DSTM32F4 -DSTM32F4CCM -DSTM32F407VG -I/home/shader/coursework_filter/src -I/home/shader/coursework_filter/build/_deps/llibopencm3-src/include -ggdb3 -Os -fdata-sections -ffunction-sections -fno-common -fno-exceptions -Wall -Wextra -Wshadow -Wdouble-promotion -Wundef -Wconversion -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -o CMakeFiles/coursework.dir/main.c.obj -c /home/shader/coursework_filter/src/main.c",
+  "file": "/home/shader/coursework_filter/src/main.c",
+  "output": "src/CMakeFiles/coursework.dir/main.c.obj"
+}
+]

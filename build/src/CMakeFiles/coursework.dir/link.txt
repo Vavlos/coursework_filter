@@ -1,0 +1,1 @@
+/usr/bin/arm-none-eabi-gcc -nostartfiles -specs=nano.specs -specs=nosys.specs -lc -lm -lnosys -Wl,--gc-sections -T/home/shader/coursework_filter/build/_deps/llibopencm3-src/lib/generated.stm32f407vg.ld -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard CMakeFiles/coursework.dir/main.c.obj -o coursework  ../_deps/llibopencm3-src/lib/libopencm3_stm32f4.a 
