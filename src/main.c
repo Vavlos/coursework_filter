@@ -83,6 +83,7 @@ static uint16_t read_adc(uint8_t ch)
 }
 
 // ===== TIMER ISR =====
+//прерывание
 void tim2_isr(void)
 {
     if (timer_get_flag(TIM2, TIM_SR_UIF)) {
@@ -195,6 +196,9 @@ int main(void)
 
     while (1) {}
 }
+
+
+
 
 int _close(int file)
 {
