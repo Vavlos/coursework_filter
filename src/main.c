@@ -1,19 +1,13 @@
-#include <errno.h>
-#include <stdio.h>
-#include <unistd.h>
-
 #include <libopencm3/cm3/nvic.h>
 
 #include <libopencm3/stm32/adc.h>
 #include <libopencm3/stm32/dac.h>
 #include <libopencm3/stm32/gpio.h>
 #include <libopencm3/stm32/rcc.h>
-#include <libopencm3/stm32/usart.h>
 #include <libopencm3/stm32/timer.h>
 
 #define LED_PORT       GPIOD
 #define LED_PIN        GPIO12
-#define USART_CONSOLE  USART2
 
 // =====================================================
 // BANDPASS FILTER
@@ -65,21 +59,6 @@ static float filter(float x)
     y_1 = y;
 
     return y;
-}
-
-// =====================================================
-// printf support
-// =====================================================
-
-int _write(int file, char *ptr, int len)
-{
-    (void)file;
-
-    for (int i = 0; i < len; i++) {
-        usart_send_blocking(USART_CONSOLE, ptr[i]);
-    }
-
-    return len;
 }
 
 // =====================================================
@@ -231,53 +210,7 @@ static void dac_setup(void)
     dac_enable(DAC1, DAC_CHANNEL2);
 }
 
-// =====================================================
-// USART
-// =====================================================
 
-static void usart_setup(void)
-{
-    gpio_mode_setup(
-        GPIOA,
-        GPIO_MODE_AF,
-        GPIO_PUPD_NONE,
-        GPIO2
-    );
-
-    gpio_set_af(GPIOA, GPIO_AF7, GPIO2);
-
-    usart_set_baudrate(
-        USART_CONSOLE,
-        115200
-    );
-
-    usart_set_databits(
-        USART_CONSOLE,
-        8
-    );
-
-    usart_set_stopbits(
-        USART_CONSOLE,
-        USART_STOPBITS_1
-    );
-
-    usart_set_parity(
-        USART_CONSOLE,
-        USART_PARITY_NONE
-    );
-
-    usart_set_flow_control(
-        USART_CONSOLE,
-        USART_FLOWCONTROL_NONE
-    );
-
-    usart_set_mode(
-        USART_CONSOLE,
-        USART_MODE_TX
-    );
-
-    usart_enable(USART_CONSOLE);
-}
 
 // =====================================================
 // TIMER
@@ -330,51 +263,8 @@ int main(void)
 
     dac_setup();
 
-    usart_setup();
-
     tim_setup();
-
-    printf("Bandpass filter Fs = 17500 Hz\r\n");
 
     while (1) {
     }
-}
-
-// =====================================================
-// STUBS FOR NEWLIB
-// =====================================================
-
-int _close(int file)
-{
-    (void)file;
-    return -1;
-}
-
-int _fstat(int file, void *st)
-{
-    (void)file;
-    (void)st;
-    return 0;
-}
-
-int _isatty(int file)
-{
-    (void)file;
-    return 1;
-}
-
-int _lseek(int file, int ptr, int dir)
-{
-    (void)file;
-    (void)ptr;
-    (void)dir;
-    return 0;
-}
-
-int _read(int file, char *ptr, int len)
-{
-    (void)file;
-    (void)ptr;
-    (void)len;
-    return 0;
 }

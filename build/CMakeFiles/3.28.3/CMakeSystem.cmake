@@ -1,6 +1,6 @@
-set(CMAKE_HOST_SYSTEM "Linux-6.17.0-22-generic")
+set(CMAKE_HOST_SYSTEM "Linux-6.17.0-29-generic")
 set(CMAKE_HOST_SYSTEM_NAME "Linux")
-set(CMAKE_HOST_SYSTEM_VERSION "6.17.0-22-generic")
+set(CMAKE_HOST_SYSTEM_VERSION "6.17.0-29-generic")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
 include("/home/shader/coursework_filter/cmake/arm-none-eabi-gcc.cmake")

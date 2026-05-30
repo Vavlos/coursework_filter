@@ -5,11 +5,16 @@ message(CHECK_START "\tSources")
 add_executable(${CMAKE_PROJECT_NAME}
 
     main.c
+
 )
 
 target_include_directories(${CMAKE_PROJECT_NAME}
     PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+target_link_options(coursework PRIVATE
+    -specs=nosys.specs
 )
 
 # Папки библиотек должны включаться в основной сценарии заранее

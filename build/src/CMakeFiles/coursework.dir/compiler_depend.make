@@ -18,9 +18,6 @@ src/CMakeFiles/coursework.dir/main.c.obj: /home/shader/coursework_filter/src/mai
   _deps/llibopencm3-src/include/libopencm3/stm32/common/rcc_common_all.h \
   _deps/llibopencm3-src/include/libopencm3/stm32/common/timer_common_all.h \
   _deps/llibopencm3-src/include/libopencm3/stm32/common/timer_common_f24.h \
-  _deps/llibopencm3-src/include/libopencm3/stm32/common/usart_common_all.h \
-  _deps/llibopencm3-src/include/libopencm3/stm32/common/usart_common_f124.h \
-  _deps/llibopencm3-src/include/libopencm3/stm32/common/usart_common_f24.h \
   _deps/llibopencm3-src/include/libopencm3/stm32/dac.h \
   _deps/llibopencm3-src/include/libopencm3/stm32/f4/adc.h \
   _deps/llibopencm3-src/include/libopencm3/stm32/f4/dac.h \
@@ -30,185 +27,77 @@ src/CMakeFiles/coursework.dir/main.c.obj: /home/shader/coursework_filter/src/mai
   _deps/llibopencm3-src/include/libopencm3/stm32/f4/pwr.h \
   _deps/llibopencm3-src/include/libopencm3/stm32/f4/rcc.h \
   _deps/llibopencm3-src/include/libopencm3/stm32/f4/timer.h \
-  _deps/llibopencm3-src/include/libopencm3/stm32/f4/usart.h \
   _deps/llibopencm3-src/include/libopencm3/stm32/gpio.h \
   _deps/llibopencm3-src/include/libopencm3/stm32/memorymap.h \
   _deps/llibopencm3-src/include/libopencm3/stm32/pwr.h \
   _deps/llibopencm3-src/include/libopencm3/stm32/rcc.h \
   _deps/llibopencm3-src/include/libopencm3/stm32/timer.h \
-  _deps/llibopencm3-src/include/libopencm3/stm32/usart.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/errno.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/sys/errno.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/unistd.h \
-  /usr/include/newlib/unistd.h \
-  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
-  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
 
 
+_deps/llibopencm3-src/include/libopencm3/stm32/timer.h:
+
+_deps/llibopencm3-src/include/libopencm3/stm32/rcc.h:
+
+_deps/llibopencm3-src/include/libopencm3/stm32/common/dac_common_all.h:
+
+_deps/llibopencm3-src/include/libopencm3/stm32/common/adc_common_v1.h:
+
+_deps/llibopencm3-src/include/libopencm3/stm32/pwr.h:
+
+_deps/llibopencm3-src/include/libopencm3/stm32/f4/gpio.h:
+
+_deps/llibopencm3-src/include/libopencm3/stm32/common/gpio_common_f234.h:
+
+_deps/llibopencm3-src/include/libopencm3/stm32/common/dac_common_v1.h:
+
+_deps/llibopencm3-src/include/libopencm3/stm32/common/rcc_common_all.h:
+
+_deps/llibopencm3-src/include/libopencm3/stm32/common/gpio_common_all.h:
+
+_deps/llibopencm3-src/include/libopencm3/cm3/nvic.h:
+
+_deps/llibopencm3-src/include/libopencm3/cm3/memorymap.h:
+
 /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h:
 
-/usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h:
+_deps/llibopencm3-src/include/libopencm3/stm32/f4/dac.h:
 
-/usr/include/newlib/unistd.h:
+_deps/llibopencm3-src/include/libopencm3/cm3/common.h:
+
+_deps/llibopencm3-src/include/libopencm3/stm32/common/timer_common_all.h:
+
+_deps/llibopencm3-src/include/libopencm3/stm32/common/gpio_common_f24.h:
 
 /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h:
-
-/usr/include/newlib/sys/unistd.h:
-
-/usr/include/newlib/sys/types.h:
-
-/usr/include/newlib/sys/timespec.h:
-
-/usr/include/newlib/sys/select.h:
-
-/usr/include/newlib/sys/sched.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/common/usart_common_all.h:
-
-/usr/include/newlib/sys/_types.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/f4/pwr.h:
-
-/usr/include/newlib/machine/endian.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/f4/nvic.h:
-
-/usr/include/newlib/machine/ieeefp.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/f4/adc.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/adc.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/f4/timer.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/dac.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/common/adc_common_v1_multi.h:
 
 /home/shader/coursework_filter/src/main.c:
 
 _deps/llibopencm3-src/include/libopencm3/dispatch/nvic.h:
 
+_deps/llibopencm3-src/include/libopencm3/stm32/f4/rcc.h:
+
 _deps/llibopencm3-src/include/libopencm3/stm32/memorymap.h:
 
-/usr/include/newlib/sys/_sigset.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/common/timer_common_all.h:
-
-_deps/llibopencm3-src/include/libopencm3/cm3/memorymap.h:
-
-_deps/llibopencm3-src/include/libopencm3/cm3/nvic.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/f4/dac.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/usart.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/common/usart_common_f24.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/timer.h:
-
-/usr/include/newlib/sys/features.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/common/gpio_common_all.h:
+_deps/llibopencm3-src/include/libopencm3/stm32/common/adc_common_v1_multi.h:
 
 _deps/llibopencm3-src/include/libopencm3/stm32/common/timer_common_f24.h:
 
-_deps/llibopencm3-src/include/libopencm3/stm32/common/gpio_common_f234.h:
+_deps/llibopencm3-src/include/libopencm3/stm32/dac.h:
 
-/usr/include/newlib/sys/stdio.h:
+_deps/llibopencm3-src/include/libopencm3/stm32/adc.h:
 
-_deps/llibopencm3-src/include/libopencm3/stm32/f4/gpio.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/common/adc_common_v1.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/common/dac_common_v1.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/common/usart_common_f124.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/common/dac_common_all.h:
-
-/usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h:
-
-_deps/llibopencm3-src/include/libopencm3/cm3/common.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/common/rcc_common_all.h:
-
-/usr/include/newlib/sys/_pthreadtypes.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/f4/usart.h:
-
-/usr/include/newlib/sys/reent.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/gpio.h:
-
-/usr/include/newlib/stdio.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/f4/rcc.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/pwr.h:
-
-/usr/include/newlib/machine/_default_types.h:
-
-/usr/include/newlib/_ansi.h:
-
-/usr/include/newlib/_newlib_version.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/common/gpio_common_f24.h:
-
-/usr/include/newlib/errno.h:
-
-/usr/include/newlib/machine/_endian.h:
-
-/usr/include/newlib/machine/_types.h:
-
-/usr/include/newlib/sys/lock.h:
-
-/usr/include/newlib/machine/types.h:
-
-_deps/llibopencm3-src/include/libopencm3/stm32/common/pwr_common_v1.h:
-
-/usr/include/newlib/newlib.h:
-
-/usr/include/newlib/sys/_stdint.h:
+_deps/llibopencm3-src/include/libopencm3/stm32/f4/adc.h:
 
 _deps/llibopencm3-src/include/libopencm3/stm32/f4/memorymap.h:
 
-/usr/include/newlib/sys/_timespec.h:
+_deps/llibopencm3-src/include/libopencm3/stm32/common/pwr_common_v1.h:
 
-/usr/include/newlib/sys/_timeval.h:
+_deps/llibopencm3-src/include/libopencm3/stm32/f4/nvic.h:
 
-_deps/llibopencm3-src/include/libopencm3/stm32/rcc.h:
+_deps/llibopencm3-src/include/libopencm3/stm32/f4/pwr.h:
 
-/usr/include/newlib/sys/cdefs.h:
+_deps/llibopencm3-src/include/libopencm3/stm32/f4/timer.h:
 
-/usr/include/newlib/sys/config.h:
-
-/usr/include/newlib/sys/errno.h:
+_deps/llibopencm3-src/include/libopencm3/stm32/gpio.h:
