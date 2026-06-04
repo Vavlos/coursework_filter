@@ -1765,7 +1765,7 @@ Disassembly of section .debug_info:
      b34:	00710300 	rsbseq	r0, r1, r0, lsl #6
      b38:	21000000 	mrscs	r0, (UNDEF: 0)
      b3c:	00014caf 	andeq	r4, r1, pc, lsr #25
-     b40:	8a05a501 	bhi	169f4c <vector_table-0x7e960b4>
+     b40:	8a05a201 	bhi	16934c <vector_table-0x7e96cb4>
      b44:	14000000 	strne	r0, [r0], #-0
      b48:	f4080003 	vst4.8	{d0-d3}, [r8], r3
      b4c:	01000000 	mrseq	r0, (UNDEF: 0)
@@ -1773,7 +1773,7 @@ Disassembly of section .debug_info:
      b54:	0e101900 	vnmlseq.f16	s2, s0, s0	@ <UNPREDICTABLE>
      b58:	03140000 	tsteq	r4, #0
      b5c:	2e020800 	cdpcs	8, 0, cr0, cr2, cr0, {0}
-     b60:	a7000000 	strge	r0, [r0, -r0]
+     b60:	a4000000 	strge	r0, [r0], #-0
      b64:	000bed05 	andeq	lr, fp, r5, lsl #26
      b68:	031c2200 	tsteq	ip, #0, 4
      b6c:	0a3b0800 	beq	ec2b74 <vector_table-0x713d48c>
@@ -1812,7 +1812,7 @@ Disassembly of section .debug_info:
      bf0:	034c0000 	movteq	r0, #49152	@ 0xc000
      bf4:	4c010800 	stcmi	8, cr0, [r1], {-0}
      bf8:	0e080003 	cdpeq	0, 0, cr0, cr8, cr3, {0}
-     bfc:	a8000000 	stmdage	r0, {}	@ <UNPREDICTABLE>
+     bfc:	a5000000 	strge	r0, [r0, #-0]
      c00:	000c2a05 	andeq	r2, ip, r5, lsl #20
      c04:	035a0a00 	cmpeq	sl, #0, 20
      c08:	0a090800 	beq	242c10 <vector_table-0x7dbd3f0>
@@ -1828,7 +1828,7 @@ Disassembly of section .debug_info:
      c30:	01080003 	tsteq	r8, r3
      c34:	0800035a 	stmdaeq	r0, {r1, r3, r4, r6, r8, r9}
      c38:	00000026 	andeq	r0, r0, r6, lsr #32
-     c3c:	0cc605a9 	cfstr64eq	mvdx0, [r6], {169}	@ 0xa9
+     c3c:	0cc605a6 	cfstr64eq	mvdx0, [r6], {166}	@ 0xa6
      c40:	66040000 	strvs	r0, [r4], -r0
      c44:	09080003 	stmdbeq	r8, {r0, r1}
      c48:	6800000a 	stmdavs	r0, {r1, r3}
@@ -1867,7 +1867,7 @@ Disassembly of section .debug_info:
      ccc:	01080003 	tsteq	r8, r3
      cd0:	08000380 	stmdaeq	r0, {r7, r8, r9}
      cd4:	0000001c 	andeq	r0, r0, ip, lsl r0
-     cd8:	0d3a05aa 	cfldr32eq	mvfx0, [sl, #-680]!	@ 0xfffffd58
+     cd8:	0d3a05a7 	cfldr32eq	mvfx0, [sl, #-668]!	@ 0xfffffd64
      cdc:	8c040000 	stchi	0, cr0, [r4], {-0}
      ce0:	09080003 	stmdbeq	r8, {r0, r1}
      ce4:	0500000a 	streq	r0, [r0, #-10]
@@ -1896,7 +1896,7 @@ Disassembly of section .debug_info:
      d40:	01080003 	tsteq	r8, r3
      d44:	0800039c 	stmdaeq	r0, {r2, r3, r4, r7, r8, r9}
      d48:	0000004c 	andeq	r0, r0, ip, asr #32
-     d4c:	0405ab01 	streq	sl, [r5], #-2817	@ 0xfffff4ff
+     d4c:	0405a801 	streq	sl, [r5], #-2049	@ 0xfffff7ff
      d50:	080003a2 	stmdaeq	r0, {r1, r5, r7, r8, r9}
      d54:	0000097e 	andeq	r0, r0, lr, ror r9
      d58:	00000d62 	andeq	r0, r0, r2, ror #26
@@ -1940,36 +1940,36 @@ Disassembly of section .debug_info:
      df0:	4a400350 	bmi	1001b38 <vector_table-0x6ffe4c8>
      df4:	00000024 	andeq	r0, r0, r4, lsr #32
      df8:	006ee00c 	rsbeq	lr, lr, ip
-     dfc:	570c9700 	strpl	r9, [ip, -r0, lsl #14]
-     e00:	8d00002b 	stchi	0, cr0, [r0, #-172]	@ 0xffffff54
+     dfc:	570c9400 	strpl	r9, [ip, -r0, lsl #8]
+     e00:	8a00002b 	bhi	eb4 <vector_table-0x7fff14c>
      e04:	003d450c 	eorseq	r4, sp, ip, lsl #10
-     e08:	c60c8100 	strgt	r8, [ip], -r0, lsl #2
-     e0c:	7900007f 	stmdbvc	r0, {r0, r1, r2, r3, r4, r5, r6}
+     e08:	c60c7e00 	strgt	r7, [ip], -r0, lsl #28
+     e0c:	7600007f 			@ <UNDEFINED> instruction: 0x7600007f
      e10:	01179d0c 	tsteq	r7, ip, lsl #26
-     e14:	72246b00 	eorvc	r6, r4, #0, 22
+     e14:	72246800 	eorvc	r6, r4, #0, 16
      e18:	01000075 	tsteq	r0, r5, ror r0
-     e1c:	01ac0647 			@ <UNDEFINED> instruction: 0x01ac0647
+     e1c:	01ac0644 			@ <UNDEFINED> instruction: 0x01ac0644
      e20:	01680800 	cmneq	r8, r0, lsl #16
      e24:	9c010000 	stcls	0, cr0, [r1], {-0}
      e28:	00000fd1 	ldrdeq	r0, [r0], -r1
      e2c:	00000c25 	andeq	r0, r0, r5, lsr #24
      e30:	000fba00 	andeq	fp, pc, r0, lsl #20
      e34:	49ad2600 	stmibmi	sp!, {r9, sl, sp}
-     e38:	4d010001 	stcmi	0, cr0, [r1, #-4]
+     e38:	4a010001 	bmi	40e44 <vector_table-0x7fbf1bc>
      e3c:	00006612 	andeq	r6, r0, r2, lsl r6
      e40:	00001000 	andeq	r1, r0, r0
      e44:	00000c00 	andeq	r0, r0, r0, lsl #24
      e48:	00781300 	rsbseq	r1, r8, r0, lsl #6
-     e4c:	002a0f50 	eoreq	r0, sl, r0, asr pc
+     e4c:	002a0f4d 	eoreq	r0, sl, sp, asr #30
      e50:	00230000 	eoreq	r0, r3, r0
      e54:	00210000 	eoreq	r0, r1, r0
      e58:	79130000 	ldmdbvc	r3, {}	@ <UNPREDICTABLE>
-     e5c:	2a0f5300 	bcs	3d5a64 <vector_table-0x7c2a59c>
+     e5c:	2a0f5000 	bcs	3d4e64 <vector_table-0x7c2b19c>
      e60:	33000000 	movwcc	r0, #0
      e64:	2d000000 	stccs	0, cr0, [r0, #-0]
      e68:	13000000 	movwne	r0, #0
      e6c:	0074756f 	rsbseq	r7, r4, pc, ror #10
-     e70:	0066125d 	rsbeq	r1, r6, sp, asr r2
+     e70:	0066125a 	rsbeq	r1, r6, sl, asr r2
      e74:	004d0000 	subeq	r0, sp, r0
      e78:	004b0000 	subeq	r0, fp, r0
      e7c:	d10e0000 	mrsle	r0, (UNDEF: 14)
@@ -1977,7 +1977,7 @@ Disassembly of section .debug_info:
      e84:	01080001 	tsteq	r8, r1
      e88:	080001c8 	stmdaeq	r0, {r3, r6, r7, r8}
      e8c:	00000028 	andeq	r0, r0, r8, lsr #32
-     e90:	0f061a4d 	svceq	0x00061a4d
+     e90:	0f061a4a 	svceq	0x00061a4a
      e94:	e21a0000 	ands	r0, sl, #0
      e98:	6700000f 	strvs	r0, [r0, -pc]
      e9c:	65000000 	strvs	r0, [r0, #-0]
@@ -2010,7 +2010,7 @@ Disassembly of section .debug_info:
      f08:	32000010 	andcc	r0, r0, #16
      f0c:	01080002 	tsteq	r8, r2
      f10:	0000001b 	andeq	r0, r0, fp, lsl r0
-     f14:	0f481353 	svceq	0x00481353
+     f14:	0f481350 	svceq	0x00481350
      f18:	161a0000 	ldrne	r0, [sl], -r0
      f1c:	73000010 	movwvc	r0, #16
      f20:	71000000 	mrsvc	r0, (UNDEF: 0)
@@ -2058,28 +2058,28 @@ Disassembly of section .debug_info:
      fc8:	0102244a 	tsteq	r2, sl, asr #8
      fcc:	00310151 	eorseq	r0, r1, r1, asr r1
      fd0:	a72d2a00 	strge	r2, [sp, -r0, lsl #20]!
-     fd4:	3b010000 	blcc	40fdc <vector_table-0x7fbf024>
+     fd4:	38010000 	stmdacc	r1, {}	@ <UNPREDICTABLE>
      fd8:	00006611 	andeq	r6, r0, r1, lsl r6
      fdc:	0ff90100 	svceq	0x00f90100
      fe0:	631c0000 	tstvs	ip, #0
-     fe4:	223b0068 	eorscs	r0, fp, #104	@ 0x68
+     fe4:	22380068 	eorscs	r0, r8, #104	@ 0x68
      fe8:	00000054 	andeq	r0, r0, r4, asr r0
      fec:	00db382b 	sbcseq	r3, fp, fp, lsr #16
-     ff0:	0d3d0100 	ldfeqs	f0, [sp, #-0]
+     ff0:	0d3a0100 	ldfeqs	f0, [sl, #-0]
      ff4:	00000ff9 	strdeq	r0, [r0], -r9
      ff8:	00541600 	subseq	r1, r4, r0, lsl #12
      ffc:	10090000 	andne	r0, r9, r0
     1000:	91170000 	tstls	r7, r0
     1004:	00000000 	andeq	r0, r0, r0
     1008:	47792c00 	ldrbmi	r2, [r9, -r0, lsl #24]!
-    100c:	27010001 	strcs	r0, [r1, -r1]
+    100c:	24010001 	strcs	r0, [r1], #-1
     1010:	00002a0e 	andeq	r2, r0, lr, lsl #20
     1014:	781c0100 	ldmdavc	ip, {r8}
-    1018:	2a1b2700 	bcs	6cac20 <vector_table-0x79353e0>
+    1018:	2a1b2400 	bcs	6ca020 <vector_table-0x7935fe0>
     101c:	1d000000 	stcne	0, cr0, [r0, #-0]
-    1020:	2a2a0077 	bcs	a81204 <vector_table-0x757edfc>
+    1020:	2a270077 	bcs	9c1204 <vector_table-0x763edfc>
     1024:	1d000000 	stcne	0, cr0, [r0, #-0]
-    1028:	2a2d0079 	bcs	b41214 <vector_table-0x74bedec>
+    1028:	2a2a0079 	bcs	a81214 <vector_table-0x757edec>
     102c:	00000000 	andeq	r0, r0, r0
     1030:	00084300 	andeq	r4, r8, r0, lsl #6
     1034:	01000500 	tsteq	r0, r0, lsl #10
@@ -16629,7 +16629,7 @@ Disassembly of section .debug_line:
      3e8:	05000000 	streq	r0, [r0, #-0]
      3ec:	02050001 	andeq	r0, r5, #1
      3f0:	080001ac 	stmdaeq	r0, {r2, r3, r5, r7, r8}
-     3f4:	0100c703 	tsteq	r0, r3, lsl #14
+     3f4:	0100c403 	tsteq	r0, r3, lsl #8
      3f8:	05130505 	ldreq	r0, [r3, #-1285]	@ 0xfffffafb
      3fc:	05110601 	ldreq	r0, [r1, #-1537]	@ 0xfffff9ff
      400:	08052109 	stmdaeq	r5, {r0, r3, r8, sp}
@@ -16716,7 +16716,7 @@ Disassembly of section .debug_line:
      544:	05010100 	streq	r0, [r1, #-256]	@ 0xffffff00
      548:	02050001 	andeq	r0, r5, #1
      54c:	08000314 	stmdaeq	r0, {r2, r4, r8, r9}
-     550:	0101a503 	tsteq	r1, r3, lsl #10
+     550:	0101a203 	tsteq	r1, r3, lsl #4
      554:	05130505 	ldreq	r0, [r3, #-1285]	@ 0xfffffafb
      558:	0144030d 	cmpeq	r4, sp, lsl #6
      55c:	05140505 	ldreq	r0, [r4, #-1285]	@ 0xfffffafb

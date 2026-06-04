@@ -9,7 +9,7 @@
 #define LED_PIN        GPIO12
 
 // =====================================================
-// BANDPASS FILTER — Direct Form II, 4th order
+// BANDPASS FILTER — Direct Form II
 // =====================================================
 // Numerator (b)
 static const float b0 =  0.013202172f;
@@ -31,10 +31,7 @@ static float w3 = 0.0f;
 static float w4 = 0.0f;
 
 // =====================================================
-// FILTER  —  Direct Form II (single section, order 4)
-//
-//   w[k]  =  x[k] - a1*w1 - a2*w2 - a3*w3 - a4*w4
-//   y[k]  =  b0*w[k] + b1*w1 + b2*w2 + b3*w3 + b4*w4
+// FILTER 
 // =====================================================
 static float filter(float x)
 {
